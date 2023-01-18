@@ -45,3 +45,39 @@ input {
 
 	background: #18181b;
 }
+
+/* Pseudo-selector */
+input:checked {
+	appearance: none;
+	-webkit-appearance: none;
+
+	width: 64px;
+	height: 64px;
+
+	background: #8b5cf6;
+	border: 2px solid #a78bfa;
+	border-radius: 8px;
+}
+
+form {
+	display: flex;
+}
+
+form .days {
+	display: flex;
+	gap: 48px;
+	margin-left: 32px;
+}
+
+form .days .day {
+	display: flex;
+	gap: 24px;
+	flex-direction: column;
+}
+
+form .day {
+	font-family: "Roboto mono", "sans-serif";
+	font-weight: 700;
+	line-height: 125%;
+	color: #a1a1aa;
+}
