@@ -15,6 +15,11 @@ header {
 	justify-content: space-between;
 
 	padding: 48px;
+
+	background-color: #09090a;
+
+	width: 100%;
+	position: fixed;
 }
 
 button {
@@ -59,11 +64,13 @@ input:checked {
 	border-radius: 8px;
 }
 
-form {
+#form-habits {
 	display: flex;
 	align-items: flex-end;
 
-	padding: 0 48px;
+	width: fit-content;
+
+	padding: 180px 48px 48px;
 }
 
 form .habits {
@@ -102,4 +109,13 @@ form .days .day div {
 	color: #a1a1aa;
 	margin-bottom: 20px;
 	font-size: 20px;
+}
+
+@media (max-width: 481px) {
+	button div {
+		display: none;
+	}
+	button {
+		margin-left: 24px;
+	}
 }
