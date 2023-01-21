@@ -16,13 +16,9 @@ function add() {
 	nlwSetup.addDay(today)
 }
 
-function save() {}
-
-/* const data = {
-	run: ["04-02", "05-02", "08-02"],
-	water: ["04-02", "06-02", "08-02"],
-	work: ["01-02", "02-02", "03-02", "04-02", "05-02"],
-} 
-
+function save() {
+	localStorage.setItem("NLWSetup@habits", JSON.stringify(nlwSetup.data))
+}
+var data = JSON.parse(localStorage.getItem("NLWSetup@habits")) || {}
 nlwSetup.setData(data)
-nlwSetup.load()*/
+nlwSetup.load()
